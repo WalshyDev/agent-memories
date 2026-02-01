@@ -4,7 +4,7 @@ compatibility_date = "2026-02-01"
 
 [[r2_buckets]]
 binding = "MEMORIES_BUCKET"
-bucket_name = "claude-memories"
+bucket_name = "agent-memories"
 
 [ai]
 binding = "AI"

@@ -74,7 +74,7 @@ Add to your Claude Code MCP settings:
 ```json
 {
   "mcpServers": {
-    "claude-memory": {
+    "agent-memories": {
       "type": "http",
       "url": "https://your-worker.your-subdomain.workers.dev/mcp",
       "headers": {

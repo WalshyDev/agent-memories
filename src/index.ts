@@ -288,7 +288,7 @@ async function handleMcpRequest(env: Env, request: JsonRpcRequest): Promise<Json
       return mcpResult(id, {
         protocolVersion: '2024-11-05',
         capabilities: { tools: {} },
-        serverInfo: { name: 'claude-memory', version: '1.0.0' },
+        serverInfo: { name: 'agent-memories', version: '1.0.0' },
       });
 
     case 'tools/list':

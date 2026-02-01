@@ -44,12 +44,12 @@ npm install
 
 ```bash
 # Create R2 bucket
-wrangler r2 bucket create claude-memories
+wrangler r2 bucket create agent-memories
 
 # Create AI Search instance via Cloudflare Dashboard:
 # 1. Go to AI > AI Search
-# 2. Create new instance named "claude-memories"
-# 3. Connect it to the "claude-memories" R2 bucket
+# 2. Create new instance named "agent-memories"
+# 3. Connect it to the "agent-memories" R2 bucket
 ```
 
 ### 3. Configure Secrets
@@ -85,7 +85,7 @@ Add to `~/.claude.json`:
 ```json
 {
   "mcpServers": {
-    "claude-memory": {
+    "agent-memories": {
       "type": "http",
       "url": "https://agent-memories.<subdomain>.workers.dev/mcp",
       "headers": {
@@ -103,8 +103,8 @@ Add to `~/.opencode/config.json`:
 ```json
 {
   "mcpServers": {
-    "claude-memory": {
-      "type": "http",
+    "agent-memories": {
+      "type": "remote",
       "url": "https://agent-memories.<subdomain>.workers.dev/mcp",
       "headers": {
         "Authorization": "Bearer YOUR_API_KEY"
