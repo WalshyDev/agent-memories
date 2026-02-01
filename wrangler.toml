@@ -1,0 +1,16 @@
+name = "agent-memories"
+main = "src/index.ts"
+compatibility_date = "2026-02-01"
+
+[[r2_buckets]]
+binding = "MEMORIES_BUCKET"
+bucket_name = "claude-memories"
+
+[ai]
+binding = "AI"
+
+# Set these as secrets:
+# wrangler secret put API_KEY
+# wrangler secret put CF_API_TOKEN
+# wrangler secret put CF_ACCOUNT_ID
+# wrangler secret put AI_SEARCH_INSTANCE
